@@ -23,6 +23,7 @@ myproc.call
 
 #I had to define procs explicty in the array class and override it
 
+
 class Array
     def my_each(&block)
       self.length.times do |i|
@@ -32,4 +33,7 @@ class Array
   end
   
   [1, 2, 3].my_each { |i| puts i * 2 }
+
+
+  [1, 2, 3].each { |i| puts i * 3 }
   
